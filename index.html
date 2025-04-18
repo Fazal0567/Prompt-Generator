@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Prompt Generator</h1>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <select id="category">
+                <option value="all">All Categories</option>
+                <option value="writing">Writing</option>
+                <option value="art">Art</option>
+                <option value="coding">Coding</option>
+                <option value="ai">AI</option>
+            </select>
+            
+            <button id="generate-btn" class="btn">
+                <span>Generate Prompt</span>
+                <i class="fas fa-magic"></i>
+            </button>
+        </div>
+        
+        <div class="prompt-container">
+            <div class="prompt-display" id="prompt-display">
+                <p>Click the button to generate a prompt.</p>
+            </div>
+            <div class="prompt-actions">
+                <button id="copy-btn" class="btn secondary" title="Copy to clipboard">
+                    <i class="far fa-copy"></i>
+                </button>
+                <button id="save-btn" class="btn secondary" title="Save prompt">
+                    <i class="far fa-bookmark"></i>
+                </button>
+                <button id="share-btn" class="btn secondary" title="Share prompt">
+                    <i class="fas fa-share-alt"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="custom-prompt">
+            <h3>Add Your Own Prompt</h3>
+            <textarea id="custom-prompt-input" placeholder="Enter your custom prompt..."></textarea>
+            <button id="add-prompt-btn" class="btn">Add to Collection</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
