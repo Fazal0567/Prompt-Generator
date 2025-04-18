@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function() {
         void promptDisplay.offsetWidth; // Trigger reflow
         promptDisplay.classList.add('fade-in');
         
-        promptDisplay.innerHTML = <p>${selectedPrompt}</p>;
+        promptDisplay.innerHTML = `<p>${selectedPrompt}</p>`;
     }
     
     // Copy prompt to clipboard
